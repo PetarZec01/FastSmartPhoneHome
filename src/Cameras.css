@@ -1,0 +1,34 @@
+*{
+    margin:0;
+}
+
+.btn-container{
+    position: fixed;
+    display: flex;
+    right:0;
+    bottom: 0;
+    margin: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.btn{
+    padding: 10px;
+    margin: 5px;
+    outline-style: solid;
+    outline-color: black;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 5px 5px;
+}
+
+.btn:hover{
+    background-color: rgb(225, 225, 225);
+}
+
+.video-grid{
+    margin: 30px;
+    height: 500px;
+    outline-style: solid;
+}
