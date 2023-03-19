@@ -9,9 +9,9 @@ function Login() {
   const handleSubmit = (event) => {
     event.preventDefault();
     if(event.target.username.value =='admin' && event.target.password.value =='admin'){
-        return <Redirect to="/home"/>
+        window.location.pathname = '/home'
     }
-    else{ return <Redirect to="/login"/> }
+    else{ window.location.pathname = '/' }
   }
 
   return (
@@ -22,7 +22,7 @@ function Login() {
       <h2>Login</h2>
       <div className='inputs'>
         <label htmlFor="username">Email:</label>
-        <input type="text" id="username" value={username} onChange={(e) => setUsername(e.target.value)} />
+        <input  type="text" id="username" value={username} onChange={(e) => setUsername(e.target.value)} />
       </div>
       <div className='inputs'>
         <label htmlFor="password">Password:</label>
